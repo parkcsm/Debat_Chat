@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alexd10s.ethereumwallet.activities.GenerateWalletActivity"
+    android:background="@color/lightBlue">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Ethereum Wallet"
+            android:textSize="25sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ethereum_wallet"/>
+
+        <TextView
+            android:id="@+id/public_key_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:text="Public Key:"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_gravity="left"/>
+        <EditText
+            android:id="@+id/public_key_input"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:layout_marginTop="10dp"
+            android:hint="Public Key"
+            android:inputType="text"
+            android:background="@drawable/input_data"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorPrimary"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:text="Scan QR"
+                android:gravity="center"
+                android:layout_gravity="left"
+                android:layout_marginRight="50dp"
+                android:background="@color/yellow"
+                android:textColor="@color/colorPrimary"
+                android:visibility="invisible"
+                android:id="@+id/scan_qr_public"/>
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:background="@color/yellow"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:text="Paste key"
+                android:visibility="invisible"
+                android:id="@+id/paste_qr_public"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/private_key_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Private Key:"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_gravity="left"/>
+        <EditText
+            android:id="@+id/private_key_input"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:layout_marginTop="10dp"
+            android:hint="Private Key"
+            android:inputType="text"
+            android:background="@drawable/input_data"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:text="Scan QR"
+                android:gravity="center"
+                android:layout_gravity="left"
+                android:layout_marginRight="50dp"
+                android:background="@color/yellow"
+                android:textColor="@color/colorPrimary"
+                android:visibility="invisible"
+                android:id="@+id/scan_qr_private"/>
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:background="@color/yellow"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:text="Paste key"
+                android:visibility="invisible"
+                android:id="@+id/paste_qr_private"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Store Keys"
+                android:gravity="center"
+                android:layout_gravity="left"
+                android:layout_marginRight="50dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/whiteColor"
+                android:id="@+id/store_keys"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="end"
+                android:gravity="center"
+                android:textColor="@color/whiteColor"
+                android:text="Cancel"
+                android:id="@+id/cancel_store"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

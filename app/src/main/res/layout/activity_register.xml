@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="coma.idealist.www.javachattest7.coma.idealist.www.javachattest7.register">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이름"
+        android:textColor="#000000"
+        android:layout_margin="7dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/reg_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이메일"
+        android:textColor="#000000"
+        android:layout_margin="7dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/reg_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="아이디"
+        android:textColor="#000000"
+        android:layout_margin="7dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/reg_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="비밀번호"
+        android:textColor="#000000"
+        android:layout_margin="7dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="비밀번호확인"
+        android:textColor="#000000"
+        android:layout_margin="7dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/reg_password_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"/>
+
+
+
+
+    <Button
+        android:id="@+id/bn_reg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#456782"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="회원가입 진행"/>
+
+</LinearLayout>

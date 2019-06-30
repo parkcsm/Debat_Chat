@@ -1,0 +1,2 @@
+include ':app', ':cuberun_lib2-release'
+include ':openCVLibrary342'

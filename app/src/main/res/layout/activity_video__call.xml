@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Video_Call">
+
+    <FrameLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp">
+
+        <FrameLayout
+            android:id="@+id/subscriber_container_in_video_call"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/publisher_container_in_video_call"
+                android:layout_width="90dp"
+                android:layout_height="120dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="3dp">
+
+            </FrameLayout>
+        </FrameLayout>
+        <Button
+            android:id="@+id/disconnect_call"
+            android:layout_gravity="bottom|center"
+            android:text="전화 끊기"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+
+
+</LinearLayout>

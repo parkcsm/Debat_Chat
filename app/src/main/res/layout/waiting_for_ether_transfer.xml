@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이더리움을 전송하고 있는 중입니다."/>
+
+    <TextView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="잠시만 기다려주세요."/>
+
+    <TextView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="시간이 최대 30초까지 소요됩니다."/>
+
+
+
+</LinearLayout>

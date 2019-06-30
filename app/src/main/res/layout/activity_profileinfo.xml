@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="coma.idealist.www.javachattest7.coma.idealist.www.javachattest7.profileinfo">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/iv_profilephoto"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/color"
+        app:civ_border_color="#000000"
+        app:civ_border_width="0.8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textSize="1dp" />
+
+    <EditText
+        android:id="@+id/tv_profiletext"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:gravity="center"
+        android:hint="자기소개를 입력해주세요"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:textSize="1dp" />
+
+    <Button
+        android:id="@+id/btn_profilesave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="프로필 정보 저장" />
+
+</LinearLayout>

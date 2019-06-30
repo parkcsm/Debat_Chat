@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/bolder_style5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/name_of_song"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@drawable/bolder_style4"
+                    android:gravity="center"
+                    android:text="꿈 음악듣기"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/repeat_playing"
+                    android:layout_width="28dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/play_repeat_on_off"
+                    android:button="@android:color/transparent"
+                    android:gravity="center" />
+
+
+                <CheckBox xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/repeat_playing_all"
+                    android:layout_width="28dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/play_repeat_on_off_all"
+                    android:button="@android:color/transparent"
+                    android:gravity="center" />
+
+
+                <CheckBox
+                    android:layout_marginRight="25dp"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/repeat_playing_random"
+                    android:layout_width="28dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/play_repeat_on_off_random"
+                    android:button="@android:color/transparent"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/seek_bar"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bolder_style3" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_time"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bolder_style3"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_streaming_time_now"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/music_time_huddle"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="/"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_streaming_time"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bolder_style3"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/previous_song"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:src="@drawable/previous_button"
+                    app:civ_border_color="#000000"
+                    app:civ_border_width="0dp" />
+
+                <CheckBox
+                    android:id="@+id/button_convert_play_pause"
+                    android:layout_width="35dp"
+                    android:layout_height="33dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginRight="65dp"
+                    android:background="@drawable/play_pause"
+                    android:button="@android:color/transparent"
+                    android:gravity="center" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/next_song"
+                    android:layout_width="35dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/next_button"
+                    app:civ_border_color="#000000"
+                    app:civ_border_width="0dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

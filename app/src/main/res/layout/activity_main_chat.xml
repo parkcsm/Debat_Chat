@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1"
+    android:layout_gravity="center_vertical"
+    tools:context="coma.idealist.www.javachattest7.coma.idealist.www.javachattest4.MainChat">
+
+    <TableRow>
+        <TextView android:text="My Fun Chat 01"
+            android:layout_span="2"
+            android:textSize="8pt"
+            android:textColor="#ffff7825"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView android:text="Host :"/>
+        <EditText android:id="@+id/chat_host"
+            android:text="13.125.191.223"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView android:text="Port :"/>
+        <EditText android:id="@+id/chat_port"
+            android:text="9999"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView android:text="NicName :"/>
+        <EditText android:id="@+id/chat_name"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:text="Receiver :"/>
+        <EditText android:id="@+id/chat_receiver"/>
+    </TableRow>
+
+    <TableRow>
+        <Button android:layout_span="2"
+            android:id="@+id/chat_btn"
+            android:text="Connect"
+            />
+    </TableRow>
+
+    <TableRow>
+        <Button android:layout_span="2"
+            android:id="@+id/service_start_btn"
+            android:text="Service start"
+            />
+    </TableRow>
+
+    <TableRow>
+        <Button android:layout_span="2"
+            android:id="@+id/service_stop_btn"
+            android:text="Service stop"
+            />
+    </TableRow>
+
+</TableLayout>

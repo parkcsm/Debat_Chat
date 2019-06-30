@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:text="댓글 수정"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:text=""
+        android:layout_marginTop="10dp"
+        android:background="#d73333"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="15dp" />
+
+
+    <EditText
+        android:hint="                                                                         "
+        android:layout_gravity="left"
+        android:id="@+id/edt_comment_change"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="15dp" />
+
+    <Button
+        android:id="@+id/btn_comment_change"
+        android:text="수정 완료"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

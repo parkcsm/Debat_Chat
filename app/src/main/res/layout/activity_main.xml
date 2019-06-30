@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.alexd10s.ethereumwallet.activities.MainActivity"
+    android:background="@color/lightBlue">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ethereum_logo"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balance:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_balance"
+            android:text="Create a Wallet first"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:text="Create Wallet"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/whiteColor"
+            android:id="@+id/create_wallet"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/whiteColor"
+            android:text="Send Ethers"
+            android:id="@+id/send_ether"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/whiteColor"
+            android:text="Receive Ethers"
+            android:id="@+id/receive_ether"/>
+
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginRight="@dimen/activity_vertical_margin"-->
+            <!--android:layout_marginLeft="@dimen/activity_vertical_margin"-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:textColor="@color/whiteColor"-->
+            <!--android:text="Buy 3 Ethers"-->
+            <!--android:id="@+id/buy_ether"/>-->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/whiteColor"
+            android:text="See my Keys"
+            android:id="@+id/keys_ether"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

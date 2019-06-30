@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Use OpenCV with CMake</string>
+    <string name="title_activity_broad_cast__room_list">BroadCast_RoomList</string>
+</resources>

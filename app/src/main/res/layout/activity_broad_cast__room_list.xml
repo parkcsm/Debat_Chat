@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bolder_style"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BroadCast_RoomList">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bolder_style"
+            android:backgroundTint="#e29fe1"
+            android:gravity="center"
+            android:text="실시간 토론 방송 목록"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/make_broad_cast_room"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/chat_image" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/broad_cast_room_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#edebeb"
+        android:dividerHeight="10dp" />
+
+</LinearLayout>
